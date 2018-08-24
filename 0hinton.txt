@@ -1,0 +1,49 @@
+ Converting Raw files into Matlab format 
+ Pretraining a deep autoencoder.
+The Science paper used 50 epochs. This uses   1 epoches
+ Size of the training dataset=        60000
+ Size of the test dataset=        10000
+         100         784         600
+ Pretraining Layer 1 with RBM:           784        1000
+epoch=  1      batch=  100
+epoch=  1      batch=  200
+epoch=  1      batch=  300
+epoch=  1      batch=  400
+epoch=  1      batch=  500
+epoch=  1      batch=  600
+ epoch           1 error   333924.23458431510     
+ Pretraining Layer 2 with RBM:         1000         500
+epoch=  1      batch=  100
+epoch=  1      batch=  200
+epoch=  1      batch=  300
+epoch=  1      batch=  400
+epoch=  1      batch=  500
+epoch=  1      batch=  600
+ epoch           1 error   769926.27944863786     
+ Pretraining Layer 3 with RBM:           500         250
+epoch=  1      batch=  100
+epoch=  1      batch=  200
+epoch=  1      batch=  300
+epoch=  1      batch=  400
+epoch=  1      batch=  500
+epoch=  1      batch=  600
+ epoch           1 error   260897.79531890529     
+ Pretraining Layer 4 with RBM:          250          30
+epoch=  1      batch=  100
+epoch=  1      batch=  200
+epoch=  1      batch=  300
+epoch=  1      batch=  400
+epoch=  1      batch=  500
+epoch=  1      batch=  600
+ epoch           1 error   159110.45727096652     
+ Fine-tuning deep autoencoder by minimizing cross entropy error.
+ 60 batches of 1000 cases each.
+        1000         784
+         500        1000
+         250         500
+          30         250
+ Size of the training dataset=        60000
+ Size of the test dataset=        10000
+ Displaying in figure 1: Top row - double precision data, Bottom row -- reconstructions 
+        1568          15 mnistdisp.f90 784*2=1568
+ gnuplot draw now

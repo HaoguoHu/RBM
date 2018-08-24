@@ -1,0 +1,25 @@
+FlowChart
+
+Main  !mnistdeepauto.f90
+	USE DataC 
+	call makebatches() 
+		call ranperm()
+		
+	call rbm()
+		call randn() 
+		do epoch = epoch, maxepoch  !1,1
+		do batch = 1, numbatches
+			call random_number()
+			******
+		enddo 
+		enddo   
+		
+	call rbm()
+	call rbm()	
+	call rbmhidlinear()
+		
+	call backprop() 
+		call makebatches()
+		call mnistdisp()
+		call minimize()
+			call CG_MNIST()

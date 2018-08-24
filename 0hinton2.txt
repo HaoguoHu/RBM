@@ -1,0 +1,24 @@
+ Converting Raw files into Matlab format 
+ Pretraining a deep autoencoder.
+The Science paper used 50 epochs. This uses   1 epoches
+ Fine-tuning deep autoencoder by minimizing cross entropy error.
+ 60 batches of 1000 cases each.
+        1000         784
+         500        1000
+         250         500
+          30         250
+ Size of the training dataset=        60000
+ Size of the test dataset=        10000
+ batch =         100
+ batch =         200
+ batch =         300
+ batch =         400
+ batch =         500
+ batch =         600
+ Displaying in figure 1: Top row - double precision data, Bottom row -- reconstructions 
+        1568          15 mnistdisp.f90 784*2=1568
+ gnuplot draw now
+         100         784         100
+ batch =         100
+           1 Before epoch Train, squared error:   36.347442776021829      Test squared error:   36.005482129185118     
+ epoch=           1  batch=           1
